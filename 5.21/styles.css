@@ -1,8 +1,10 @@
 a{
     text-decoration: none; 
+    padding: 1em;
 }
 .nav li{
     list-style-type: none;
+    font-weight: bold;
 
 
 }
@@ -19,6 +21,7 @@ a{
 }
 .container-2{
     display: flex;
+    justify-content: collum;
     margin: 20px 10px 10px 10px;
     background-color: white;
     height: 500px;
@@ -77,4 +80,21 @@ a{
     background-color: aquamarine;
     height: auto;
     margin: 1em;
+}
+.title{
+   
+    border: 5px solid blue;
+    width: auto;
+    background-color: aquamarine;
+    height: 100px;
+    margin: 1em;
+    text-align: center;
+    font-family: cursive;
+    position: relative;
+
+
+}
+.sidebar li{
+    margin: 2em;
+    text-align: center;
 }
