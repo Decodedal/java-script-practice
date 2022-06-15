@@ -41,14 +41,32 @@
 //   let result = sum(a,b) + sum(c,d)
 //   console.log(result)
 
-function greetUser(obj({a,b}){
-    console.log(`Welcome, ${firstName} ${lastName}!`)
-}
+// function greetUser(obj({a,b}){
+//     console.log(`Welcome, ${firstName} ${lastName}!`)
+// }
 
-const erica = {
-    firstName: 'Erica',
-    lastName: 'Mills'
-}
+// const erica = {
+//     firstName: 'Erica',
+//     lastName: 'Mills'
+// }
 
-// Instead of calling greetUser like this:
-greetUser(erica.firstName, erica.lastName)
+// // Instead of calling greetUser like this:
+// greetUser(erica.firstName, erica.lastName)
+
+// function profit(x,y){
+//     let sumP = 0 
+//     let sumE = 0 
+//     for(let num in x){
+//         sumP += x[num]  
+//     }
+//     for (let boo in y){
+//         sumE += y[boo]  
+//     }
+//        return sumP - sumE
+//   }
+  
+//  console.log(profit([ 516000, 30000, 24000], [ 100000, 2800 ]))
+arr=[1,2,3,4,5]
+for (let num in arr){
+    console.log(num)
+}
