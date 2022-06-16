@@ -82,21 +82,44 @@ function profit(x,y){
 // }
 // console.log(result)
 
-function calculator(num,num2,callback){
-     return callback(num,num2)
+// function calculator(num,num2,callback){
+//      return callback(num,num2)
+// }
+
+// function add(a,b){
+//    return a+b
+// }
+// function subtract(a,b){
+//     return a-b
+// }
+// function multipy(a,b){
+//     return a*b
+// }
+// function divide(a,b){
+//     return a/b
+// }
+
+// console.log(calculator(10,5,multipy))
+
+// function threeTimes(doIt){
+//     return doIt(),doIt(),doIt()
+  
+//  }
+ 
+//  threeTimes(function(){
+//      console.log('Hello World!')
+//  })
+
+
+function forEach(elements, callback){
+    for(let i = 0; i < elements.length; i++){
+       callback(elements[i])
+    }
 }
 
-function add(a,b){
-   return a+b
-}
-function subtract(a,b){
-    return a-b
-}
-function multipy(a,b){
-    return a*b
-}
-function divide(a,b){
-    return a/b
-}
-
-console.log(calculator(10,5,multipy))
+let numbers = [ 500, 80, 20 ]
+let total = 900000000000000
+forEach(numbers, function(number){
+    total/= number
+})
+console.log(total)
