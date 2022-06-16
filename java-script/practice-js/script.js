@@ -29,17 +29,7 @@
 // avg = sum/ newInventoryYearBuilt.length
 // console.log(avg)
 
-// function sum(num, num2){
-//     return num + num2
-//   }
-  
-//   let a = 10
-//   let b = 5
-//   let c = 6
-//   let d = 4
-  
-//   let result = sum(a,b) + sum(c,d)
-//   console.log(result)
+
 
 // function greetUser(obj({a,b}){
 //     console.log(`Welcome, ${firstName} ${lastName}!`)
@@ -53,20 +43,60 @@
 // // Instead of calling greetUser like this:
 // greetUser(erica.firstName, erica.lastName)
 
-// function profit(x,y){
-//     let sumP = 0 
-//     let sumE = 0 
-//     for(let num in x){
-//         sumP += x[num]  
-//     }
-//     for (let boo in y){
-//         sumE += y[boo]  
-//     }
-//        return sumP - sumE
-//   }
+function profit(x,y){
+    let sumP = 0 
+    let sumE = 0 
+    for(let num in x){
+        sumP += x[num]  
+    }
+    for (let boo in y){
+        sumE += y[boo]  
+    }
+       return sumP - sumE
+  }
   
 //  console.log(profit([ 516000, 30000, 24000], [ 100000, 2800 ]))
-arr=[1,2,3,4,5]
-for (let num in arr){
-    console.log(num)
+// arr=[1,2,3,4,5]
+// for (let num in arr){
+//     console.log(num)
+// }
+// function sum(num, num2){
+//     return num + num2
+//   }
+ 
+//  let a = 10
+//  let b = 5
+//  let c = 6
+//  let d = 4
+//  let result = sum(a,b) + sum(c,d)
+//  console.log(result)
+
+//let arr=[10,5,6,4]
+//  let result = 0
+//  let a = 10
+//  let b = 5
+//  let c = 6
+//  let d = 4
+// for (let num in arr){
+//   result+= arr[num]
+// }
+// console.log(result)
+
+function calculator(num,num2,callback){
+     return callback(num,num2)
 }
+
+function add(a,b){
+   return a+b
+}
+function subtract(a,b){
+    return a-b
+}
+function multipy(a,b){
+    return a*b
+}
+function divide(a,b){
+    return a/b
+}
+
+console.log(calculator(10,5,multipy))
