@@ -1,16 +1,21 @@
-// let companies=[
-// {name:"company two", category:"Retail", start:1992,end:2008},
-// {name:"company three", category:"Auto", start:1999,end:2007},
-// {name:"company four", category:"Retail", start:1989,end:2010},
-// {name:"company five", category:"Technology", start:2009,end:2014},
-// {name:"company six", category:"Finance", start:1987,end:2010},
-// {name:"company seven", category:"Auto", start:1986,end:1996},
-// {name:"company eight", category:"Technology", start:2011,end:2016},
-// {name:"company nine", category:"Retail", start:1981,end:1989}
-// ];
+let companies=[
+{name:"company two", category:"Retail", start:1992,end:2008},
+{name:"company three", category:"Auto", start:1999,end:2007},
+{name:"company four", category:"Retail", start:1989,end:2010},
+{name:"company five", category:"Technology", start:2009,end:2014},
+{name:"company six", category:"Finance", start:1987,end:2010},
+{name:"company seven", category:"Auto", start:1986,end:1996},
+{name:"company eight", category:"Technology", start:2011,end:2016},
+{name:"company nine", category:"Retail", start:1981,end:1989}
+];
 
-// const ages =[33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32]
+const ages =[33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32]
 
+// let total = ages.reduce((sum, age) => sum + age,0)
+// console.log(total)
+
+// let sumYears = companies.reduce((total, years) => total + (years.end - years.start),0)
+// console.log(sumYears)
 // // console.log(ages.filter(age => age >21))
 // // const retailCompanies = companies.filter(company => company.category =="Retail")
 
@@ -58,12 +63,12 @@
 //      str == "" || str.length > 140 ? false :
 //      capital = str
 
-let users = [
-     { id: 1, firstName: 'Azami', lastName: 'Bazia', age: 18 },
-     { id: 2, firstName: 'Elliot', lastName: 'Noor', age: 23 },
-     { id: 3, firstName: 'Samir', lastName: 'Zahara', age: 7 },
-     { id: 4, firstName: 'Idris', lastName: 'Christenson', age: 16 },
- ]
+// let users = [
+//      { id: 1, firstName: 'Azami', lastName: 'Bazia', age: 18 },
+//      { id: 2, firstName: 'Elliot', lastName: 'Noor', age: 23 },
+//      { id: 3, firstName: 'Samir', lastName: 'Zahara', age: 7 },
+//      { id: 4, firstName: 'Idris', lastName: 'Christenson', age: 16 },
+//  ]
  
 // function getFirstNames(users){
 //      return users.map((user)=>{
@@ -73,10 +78,40 @@ let users = [
  
 //  console.log(getFirstNames(users))
 
- function getTeenagers(users){
-       return  users.filter(old => { 
-       return  old.age <= 18 && old.age >= 13
-     })
+//  function getTeenagers(users){
+//        return  users.filter(old => { 
+//        return  old.age <= 18 && old.age >= 13
+//      })
+// }
+
+// console.log(getTeenagers(users))
+
+// function getChildren(users){
+//        return users.filter(age =>{return age.age <=13})
+// }
+
+// console.log(getChildren(users))
+
+// function getAges(users){
+//    return users.map(user =>`${user.firstName} ${user.age}`)
+// }
+
+// console.log(getAges(users))
+
+class Car{
+    constructor(name, model, year){
+        this.name =name;
+        this.model = model;
+        this.year = year;
+    }
+
+    getName(){
+        console.log(this.name+ " "+this.model+" "+this.year);
+    }
 }
 
-console.log(getTeenagers(users))
+let nissan = new Car("Nissan","Sentra","2015");
+nissan.getName();
+
+let toyota= new Car("toyota", "corrola","2012")
+toyota.getName();
