@@ -43,17 +43,17 @@
 // // Instead of calling greetUser like this:
 // greetUser(erica.firstName, erica.lastName)
 
-function profit(x,y){
-    let sumP = 0 
-    let sumE = 0 
-    for(let num in x){
-        sumP += x[num]  
-    }
-    for (let boo in y){
-        sumE += y[boo]  
-    }
-       return sumP - sumE
-  }
+// function profit(x,y){
+//     let sumP = 0 
+//     let sumE = 0 
+//     for(let num in x){
+//         sumP += x[num]  
+//     }
+//     for (let boo in y){
+//         sumE += y[boo]  
+//     }
+//        return sumP - sumE
+//   }
   
 //  console.log(profit([ 516000, 30000, 24000], [ 100000, 2800 ]))
 // arr=[1,2,3,4,5]
@@ -111,15 +111,48 @@ function profit(x,y){
 //  })
 
 
-function forEach(elements, callback){
-    for(let i = 0; i < elements.length; i++){
-       callback(elements[i])
-    }
-}
+// function forEach(elements, callback){
+//     for(let i = 0; i < elements.length; i++){
+//        callback(elements[i])
+//     }
+// }
 
-let numbers = [ 500, 80, 20 ]
-let total = 900000000000000
-forEach(numbers, function(number){
-    total/= number
-})
-console.log(total)
+// let numbers = [ 500, 80, 20 ]
+// let total = 900000000000000
+// forEach(numbers, function(number){
+//     total/= number
+// })
+// console.log(total)
+// function more(a,b){
+//    return a>b?"number one is greater":"number2 is greater"
+// }
+
+// function print(a,b,callback){
+//     console.log(callback(a,b))
+// }
+
+// console.log(print(22,5))
+// function isOdd(n){
+//     return n % 2 == 0 ? false : true
+// }
+// console.log(isOdd(4))
+// console.log(isOdd(5))
+
+// let exclaim = (string) => `${string}!`
+
+// console.log(exclaim('adrian'))
+// console.log(exclaim(exclaim('adrian')))
+
+// const doubleChars = str => str.split("").map(c => `${c}${c}`).join('');
+
+// console.log(doubleChars('Adrian'))
+// console.log(doubleChars('ssssnake'))
+
+// let double = arr =>arr.map(c =>`${c} ${c}`)
+
+// let arr = [1,5,2,7];
+
+// let foo = ['apple','bee','cat','dog'];
+
+// console.log(double(arr))
+// console.log(double(foo))
