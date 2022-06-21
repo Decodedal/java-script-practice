@@ -98,20 +98,49 @@ const ages =[33, 12, 20, 16, 5, 54, 21, 44, 61, 13, 15, 45, 25, 64, 32]
 
 // console.log(getAges(users))
 
-class Car{
-    constructor(name, model, year){
-        this.name =name;
-        this.model = model;
-        this.year = year;
-    }
+// class Car{
+//     constructor(name, model, year){
+//         this.name =name;
+//         this.model = model;
+//         this.year = year;
+//     }
 
+//     getName(){
+//         console.log(this.name+ " "+this.model+" "+this.year);
+//     }
+// }
+
+// let nissan = new Car("Nissan","Sentra","2015");
+// nissan.getName();
+
+// let toyota= new Car("toyota", "corrola","2012")
+// toyota.getName();
+
+class user{
+    constructor(name,userName,passWord){
+        this.name= name
+        this.userName=userName
+        this.passWord= passWord
+    }
     getName(){
-        console.log(this.name+ " "+this.model+" "+this.year);
+        return this.name
+    }
+    login (userName,passWord){  
+     if(userName === this.userName && passWord == this.passWord){
+     return console.log("login Succesful")
+    }else{
+        return  console.log("login failure")
     }
 }
+    
+    setPassword(passWord){
+        this.passWord = passWord
+    }
+    // changePassword(update){
+    //     this.passWord = update
+    // }
+}
 
-let nissan = new Car("Nissan","Sentra","2015");
-nissan.getName();
-
-let toyota= new Car("toyota", "corrola","2012")
-toyota.getName();
+let kyle = new user("Kyle", "Kman","coolman2")
+kyle.setPassword("123")
+kyle.login("Kman","123")
