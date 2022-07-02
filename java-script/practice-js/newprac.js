@@ -144,3 +144,13 @@ class user{
 let kyle = new user("Kyle", "Kman","coolman2")
 kyle.setPassword("123")
 kyle.login("Kman","123")
+
+class Admin extends User{
+    constructor(name,userName,passWord, admin){
+        super(name,userName,passWord);
+        this.admin = admin;
+    }
+    createAccount(userName,passWord){
+        console.log("account created")
+    }
+}
