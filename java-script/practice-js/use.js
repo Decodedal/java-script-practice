@@ -17,9 +17,11 @@ function createListItem(){
     let deleteButton = document.createElement('button')
     deleteButton.appendChild(document.createTextNode(' x'));
     li.appendChild(deleteButton)
-    deleteButton.addEventListener('click',removethis)
+    deleteButton.addEventListener('click',()=>{
+        li.remove()
+        })
 }
 
-function removethis(){
-    this.parentNode.remove()
-}
+// function removethis(){
+//     this.parentNode.remove()
+// }
