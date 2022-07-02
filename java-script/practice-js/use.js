@@ -13,4 +13,13 @@ function createListItem(){
     li.appendChild(document.createTextNode(input.value))
     ul.appendChild(li)
     input.value = ""
+
+    let deleteButton = document.createElement('button')
+    deleteButton.appendChild(document.createTextNode(' x'));
+    li.appendChild(deleteButton)
+    deleteButton.addEventListener('click',removethis)
+}
+
+function removethis(){
+    this.parentNode.remove()
 }
