@@ -54,6 +54,7 @@ squares.forEach(sqr=>{
     sqr.addEventListener('click',()=>{
       
         setInterval(()=>{
+                 sqr.style.backgroundColor = 'blue'
                  drop(sqr)
                  console.log(sqr.style.top)
    },10)
