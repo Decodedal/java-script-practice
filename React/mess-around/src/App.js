@@ -37,14 +37,24 @@
 import Reac,{useState} from "react";
 import DisplayIdeas from "./monster-components/Display-ideas";
 import IdeasForm from "./monster-components/ideaForm";
+import DisplayNames from "./monster-components/diplayNames";
+import AddName from "./monster-components/addName";
 
 function App(){
   const [ideas, setIdeas] = useState([
     "Movie about a guy who gets bit by a radioactive mole rat", "Romcom about two developers over zoom", "Horror film where AWS goes down for 24 hours"
   ]);
 
+const [names, setName] = useState([
+  "franken-footer", "green-weenie" , "The expandable-couch"
+])
+
   const addIdeas = (newIdeas) =>{
     setIdeas([...ideas, newIdeas])
+  }
+
+  const nameAdd = (newName) =>{
+    setName([...names, newName])
   }
  
   return(
@@ -52,6 +62,8 @@ function App(){
       <h1>Welcome, Super Awesome movie monster think tank</h1>
       <DisplayIdeas ideas = {ideas}/>
       <IdeasForm addIdeas ={addIdeas}/>
+      <DisplayNames names = {names}/>
+      <AddName nameAdd ={nameAdd}/>
      </main>
  )
 
